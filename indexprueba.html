@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andescomputacion - Especialistas en Tecnología</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Variables de colores y estilos */
+        :root {
+            --verde: #00ff88;
+            --verde-oscuro: #00cc6a;
+            --negro: #0a0a0a;
+            --gris-oscuro: #1a1a1a;
+            --gris: #333333;
+            --gris-claro: #e0e0e0;
+            --blanco: #ffffff;
+            --azul-tecnico: #0066ff;
+            --degradado-principal: linear-gradient(135deg, var(--verde), var(--azul-tecnico));
+        }
+        
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--negro);
+            color: var(--blanco);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Efectos globales */
+        .tech-border {
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: var(--degradado-principal);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        
+        .section-title p {
+            color: var(--gris-claro);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background: var(--degradado-principal);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--degradado-principal);
+            color: var(--negro);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(to right, #25D366, #128C7E);
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* Header */
+        header {
+            background-color: rgba(10, 10, 10, 0.95);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+            filter: drop-shadow(0 0 5px var(--verde));
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            background: var(--degradado-principal);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--verde);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--verde);
+            transition: width 0.3s;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('andesporta.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 255, 136, 0.2), rgba(0, 102, 255, 0.2));
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: var(--gris-claro);
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .hero-btns {
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .hero-btns .btn {
+            margin: 0 10px;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Servicios */
+        .servicios {
+            padding: 100px 0;
+            background-color: var(--gris-oscuro);
+        }
+        
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .servicio-card {
+            background-color: var(--negro);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .servicio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--degradado-principal);
+        }
+        
+        .servicio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .servicio-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--degradado-principal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--negro);
+            font-size: 2rem;
+        }
+        
+        .servicio-card h3 {
+            margin-bottom: 15px;
+            color: var(--blanco);
+        }
+        
+        .servicio-card p {
+            color: var(--gris-claro);
+        }
+        
+        .servicio-link {
+            margin-top: 20px;
+        }
+        
+        /* Productos */
+        .productos {
+            padding: 100px 0;
+            background-color: var(--negro);
+        }
+        
+        .categorias {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .categoria-btn {
+            background-color: var(--gris-oscuro);
+            color: var(--blanco);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .categoria-btn.active, .categoria-btn:hover {
+            background: var(--degradado-principal);
+            color: var(--negro);
+        }
+        
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .producto-card {
+            background-color: var(--gris-oscuro);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .producto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+        }
+        
+        .producto-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--degradado-principal);
+            color: var(--negro);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        .producto-img {
+            height: 200px;
+            background-color: var(--negro);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        
+        .producto-img img {
+            max-width: 100%;
+            max-height: 160px;
+            transition: transform 0.3s;
+        }
+        
+        .producto-card:hover .producto-img img {
+            transform: scale(1.05);
+        }
+        
+        .producto-info {
+            padding: 20px;
+        }
+        
+        .producto-info h3 {
+            margin-bottom: 10px;
+            color: var(--blanco);
+        }
+        
+        .producto-desc {
+            color: var(--gris-claro);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .producto-especificaciones {
+            margin-bottom: 15px;
+        }
+        
+        .especificacion {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+            color: var(--gris-claro);
+        }
+        
+        .producto-precio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .precio {
+            font-weight: bold;
+            color: var(--verde);
+            font-size: 1.2rem;
+        }
+        
+        /* Categorías específicas */
+        .categoria-section {
+            margin-bottom: 80px;
+        }
+        
+        .categoria-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .categoria-header h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--blanco);
+        }
+        
+        .categoria-header p {
+            color: var(--gris-claro);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Sobre Nosotros */
+        .sobre-nosotros {
+            padding: 100px 0;
+            background-color: var(--gris-oscuro);
+        }
+        
+        .sobre-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .sobre-text {
+            flex: 1;
+        }
+        
+        .sobre-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--blanco);
+        }
+        
+        .sobre-text p {
+            margin-bottom: 20px;
+            color: var(--gris-claro);
+        }
+        
+        .sobre-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: var(--degradado-principal);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .stat-text {
+            color: var(--gris-claro);
+            font-size: 0.9rem;
+        }
+        
+        .sobre-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .sobre-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Contacto */
+        .contacto {
+            padding: 100px 0;
+            background-color: var(--negro);
+        }
+        
+        .contacto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contacto-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--degradado-principal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--negro);
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+        
+        .info-text h3 {
+            margin-bottom: 5px;
+            color: var(--blanco);
+        }
+        
+        .info-text p {
+            color: var(--gris-claro);
+        }
+        
+        .contacto-form {
+            background-color: var(--gris-oscuro);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--blanco);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--negro);
+            border: 1px solid var(--gris);
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            color: var(--blanco);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--verde);
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: white;
+            padding: 50px 0 20px;
+            border-top: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 5px var(--verde));
+        }
+        
+        .footer-logo h3 {
+            color: var(--verde);
+            margin-bottom: 15px;
+        }
+        
+        .footer-links h4,
+        .footer-contact h4 {
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h4::after,
+        .footer-contact h4::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: var(--degradado-principal);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--verde);
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            color: #bbb;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--verde);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--negro);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: var(--degradado-principal);
+            color: var(--negro);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .sobre-content {
+                flex-direction: column;
+            }
+            
+            .sobre-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero-btns .btn {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43RuU0ns3DYgTFBX7ZDtsvC2JJd5ntXCC1Bp9f-dpA0KGRW2x2D1KNPLfqvT_RuU8FIA" alt="Logo Andescomputacion">
+                <h1>Andescomputacion</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <h2>Especialistas en Tecnología</h2>
+            <p>Venta de componentes, servicio técnico profesional e instalación de sistemas de seguridad. Tu solución tecnológica integral.</p>
+            <div class="hero-btns">
+                <a href="#productos" class="btn">Ver Productos</a>
+                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesan%20sus%20servicios%20de%20Andescomputacion" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones tecnológicas completas para particulares y empresas</p>
+            </div>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Venta de Componentes</h3>
+                    <p>Amplio stock de componentes de computación de primeras marcas y máxima calidad.</p>
+                    <div class="servicio-link">
+                        <a href="servicios.html#venta-componentes" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Servicio Técnico</h3>
+                    <p>Diagnóstico, reparación y mantenimiento de equipos informáticos con garantía.</p>
+                    <div class="servicio-link">
+                        <a href="servicios.html#servicio-tecnico" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-laptop-medical"></i></div>
+                    <h3>Reparación de Notebooks</h3>
+                    <p>Especialistas en reparación de laptops de todas las marcas y modelos.</p>
+                    <div class="servicio-link">
+                        <a href="servicios.html#reparacion-notebooks" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-print"></i></div>
+                    <h3>Servicio de Impresoras</h3>
+                    <p>Mantenimiento, reparación y venta de insumos para impresoras.</p>
+                    <div class="servicio-link">
+                        <a href="impresoras.html" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Instalación de Cámaras</h3>
+                    <p>Sistemas de seguridad con cámaras HD y tecnología de punta.</p>
+                    <div class="servicio-link">
+                        <a href="servicios.html#instalacion-camaras" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Redes y Conectividad</h3>
+                    <p>Instalación y configuración de redes cableadas e inalámbricas.</p>
+                    <div class="servicio-link">
+                        <a href="servicios.html#redes-conectividad" class="btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Productos</h2>
+                <p>Componentes de computación de alta calidad para armado y actualización</p>
+            </div>
+            
+            <div class="categorias">
+                <button class="categoria-btn active" data-categoria="todos">Todos</button>
+                <button class="categoria-btn" data-categoria="fuentes">Fuentes de Poder</button>
+                <button class="categoria-btn" data-categoria="gabinetes">Gabinetes</button>
+                <button class="categoria-btn" data-categoria="ram">Memoria RAM</button>
+                <button class="categoria-btn" data-categoria="procesadores">Procesadores</button>
+                <button class="categoria-btn" data-categoria="almacenamiento">Almacenamiento</button>
+            </div>
+            
+            <!-- Categoría: Fuentes de Poder -->
+            <div class="categoria-section" id="categoria-fuentes">
+                <div class="categoria-header">
+                    <h3>Fuentes de Poder</h3>
+                    <p>Encuentra la fuente perfecta para tu sistema, con certificaciones de eficiencia energética</p>
+                </div>
+                <div class="productos-grid">
+                    <div class="producto-card" data-categoria="fuentes">
+                        <div class="producto-badge">Nuevo</div>
+                        <div class="producto-img">
+                            <img src="https://images.unsplash.com/photo-1608396372738-61d8cd2c8a6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Fuente de Poder Corsair">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Fuente Corsair RM850x</h3>
+                            <p class="producto-desc">Fuente modular 80 Plus Gold de 850W para gaming</p>
+                            <div class="producto-especificaciones">
+                                <div class="especificacion">
+                                    <span>Potencia:</span>
+                                    <span>850W</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Certificación:</span>
+                                    <span>80 Plus Gold</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Modular:</span>
+                                    <span>Sí</span>
+                                </div>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio">$149.990</span>
+                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20la%20Fuente%20Corsair%20RM850x%20que%20vi%20en%20su%20página" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card" data-categoria="fuentes">
+                        <div class="producto-img">
+                            <img src="https://images.unsplash.com/photo-1608396372738-61d8cd2c8a6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Fuente de Poder Seasonic">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Fuente Seasonic Focus 750W</h3>
+                            <p class="producto-desc">Fuente 80 Plus Gold totalmente modular</p>
+                            <div class="producto-especificaciones">
+                                <div class="especificacion">
+                                    <span>Potencia:</span>
+                                    <span>750W</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Certificación:</span>
+                                    <span>80 Plus Gold</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Modular:</span>
+                                    <span>Completo</span>
+                                </div>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio">$129.990</span>
+                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20la%20Fuente%20Seasonic%20Focus%20750W%20que%20vi%20en%20su%20página" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Gabinetes -->
+            <div class="categoria-section" id="categoria-gabinetes">
+                <div class="categoria-header">
+                    <h3>Gabinetes</h3>
+                    <p>Encuentra el gabinete perfecto para tu setup, con diseños modernos y funcionales</p>
+                </div>
+                <div class="productos-grid">
+                    <div class="producto-card" data-categoria="gabinetes">
+                        <div class="producto-badge">Popular</div>
+                        <div class="producto-img">
+                            <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Gabinete NZXT">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Gabinete NZXT H510</h3>
+                            <p class="producto-desc">Gabinete mid-tower con panel lateral templado</p>
+                            <div class="producto-especificaciones">
+                                <div class="especificacion">
+                                    <span>Factor:</span>
+                                    <span>ATX Mid-Tower</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Ventanas:</span>
+                                    <span>Panel Templado</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>RGB:</span>
+                                    <span>Incluido</span>
+                                </div>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio">$89.990</span>
+                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Gabinete%20NZXT%20H510%20que%20vi%20en%20su%20página" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Memoria RAM -->
+            <div class="categoria-section" id="categoria-ram">
+                <div class="categoria-header">
+                    <h3>Memoria RAM</h3>
+                    <p>Mejora el rendimiento de tu equipo con nuestra selección de memorias de alta velocidad</p>
+                </div>
+                <div class="productos-grid">
+                    <div class="producto-card" data-categoria="ram">
+                        <div class="producto-badge">Oferta</div>
+                        <div class="producto-img">
+                            <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Memoria RAM Corsair">
+                        </div>
+                        <div class="producto-info">
+                            <h3>RAM Corsair Vengeance 16GB</h3>
+                            <p class="producto-desc">Kit 2x8GB DDR4 3200MHz para gaming</p>
+                            <div class="producto-especificaciones">
+                                <div class="especificacion">
+                                    <span>Capacidad:</span>
+                                    <span>16GB (2x8GB)</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Velocidad:</span>
+                                    <span>3200MHz</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Latencia:</span>
+                                    <span>CL16</span>
+                                </div>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio">$64.990</span>
+                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20la%20RAM%20Corsair%20Vengeance%2016GB%20que%20vi%20en%20su%20página" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="sobre-nosotros" id="nosotros">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Nosotros</h2>
+                <p>Conoce más sobre Andescomputacion y nuestra trayectoria</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h2>Especialistas en Tecnología desde 2010</h2>
+                    <p>En Andescomputacion nos dedicamos a ofrecer soluciones tecnológicas integrales para particulares y empresas. Nuestra experiencia de más de 10 años en el mercado nos ha permitido consolidarnos como referentes en el sector.</p>
+                    <p>Nos especializamos en la venta de componentes de computación, servicio técnico profesional, reparación de notebooks e instalación de sistemas de seguridad. Trabajamos con productos de primera calidad y ofrecemos garantía en todos nuestros servicios.</p>
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <div class="stat-number">+10</div>
+                            <div class="stat-text">Años de Experiencia</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+5.000</div>
+                            <div class="stat-text">Clientes Satisfechos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+10.000</div>
+                            <div class="stat-text">Productos Vendidos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Equipo de Andescomputacion">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>¿Necesitas asesoría? Contáctanos y te ayudaremos con tu proyecto</p>
+            </div>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h3>Ubicación</h3>
+                            <p>Av. Principal 123, Santiago, Chile</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">
+                            <h3>Teléfono</h3>
+                            <p>+56 9 6193 8981</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>contacto@andescomputacion.cl</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-text">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 9:00 - 19:00<br>Sábados: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacto-form">
+                    <form id="form-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="venta-componentes">Venta de Componentes</option>
+                                <option value="servicio-tecnico">Servicio Técnico</option>
+                                <option value="reparacion-notebooks">Reparación de Notebooks</option>
+                                <option value="instalacion-camaras">Instalación de Cámaras</option>
+                                <option value="redes">Redes y Conectividad</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43RuU0ns3DYgTFBX7ZDtsvC2JJd5ntXCC1Bp9f-dpA0KGRW2x2D1KNPLfqvT_RuU8FIA" alt="Logo Andescomputacion">
+                    <h3>Andescomputacion</h3>
+                    <p>Tu solución tecnológica integral. Especialistas en componentes, servicio técnico e instalación de sistemas de seguridad.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/56961938981" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#venta-componentes">Venta de Componentes</a></li>
+                        <li><a href="servicios.html#servicio-tecnico">Servicio Técnico</a></li>
+                        <li><a href="servicios.html#reparacion-notebooks">Reparación de Notebooks</a></li>
+                        <li><a href="servicios.html#instalacion-camaras">Instalación de Cámaras</a></li>
+                        <li><a href="servicios.html#redes-conectividad">Redes y Conectividad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Santiago, Chile</p>
+                    <p><i class="fas fa-phone-alt"></i> +56 9 6193 8981</p>
+                    <p><i class="fas fa-envelope"></i> contacto@andescomputacion.cl</p>
+                    <p><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 - 19:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Andescomputacion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Filtro de categorías
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoriaBtns = document.querySelectorAll('.categoria-btn');
+            const productos = document.querySelectorAll('.producto-card');
+            
+            categoriaBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    categoriaBtns.forEach(b => b.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+                    
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Mostrar/ocultar productos según categoría
+                    productos.forEach(producto => {
+                        if (categoria === 'todos' || producto.getAttribute('data-categoria') === categoria) {
+                            producto.style.display = 'block';
+                        } else {
+                            producto.style.display = 'none';
+                        }
+                    });
+                    
+                    // Mostrar/ocultar secciones de categorías
+                    const categoriaSections = document.querySelectorAll('.categoria-section');
+                    categoriaSections.forEach(section => {
+                        if (categoria === 'todos' || section.id === `categoria-${categoria}`) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Form submission
+            const form = document.getElementById('form-contacto');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico de Impresoras Profesional | Andescomputacion Los Andes</title>
+    <meta name="description" content="Servicio técnico especializado en impresoras en Los Andes. Reparación, mantenimiento, recarga de tintas y venta de insumos. Todas las marcas con garantía.">
+    <meta name="keywords" content="servicio técnico impresoras Los Andes, reparación impresoras, recarga tintas, mantenimiento impresoras, venta cartuchos">
+    <meta name="author" content="Andescomputacion">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="main.css" as="style">
+    <link rel="preload" href="components.css" as="style">
+    <link rel="preload" href="impresoras.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="impresoras.css">
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo andes computacion.png">
+    
+    <!-- Schema.org para Servicio Técnico -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Servicio Técnico de Impresoras",
+        "description": "Reparación, mantenimiento y recarga de impresoras profesionales en Los Andes",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Andescomputacion",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Yerbas Buenas 381",
+                "addressLocality": "Los Andes",
+                "addressRegion": "Valparaíso",
+                "postalCode": "2100000",
+                "addressCountry": "CL"
+            },
+            "telephone": "+56-9-6193-8981"
+        },
+        "areaServed": "Los Andes y alrededores",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Impresoras",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mantenimiento Preventivo"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Recarga de Tintas"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header id="main-header" class="header" role="banner">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Andescomputacion - Página de inicio">
+                <img src="logo andes computacion.png" 
+                     alt="Logo Andescomputacion" 
+                     width="150" 
+                     height="50"
+                     loading="eager">
+                <h1 class="gradient-text">Andescomputacion</h1>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menú principal">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav id="main-nav" class="nav-main" aria-label="Navegación principal">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="servicios.html" role="menuitem">Servicios</a></li>
+                    <li role="none"><a href="productos.html" role="menuitem">Productos</a></li>
+                    <li role="none"><a href="nosotros.html" role="menuitem">Nosotros</a></li>
+                    <li role="none"><a href="contacto.html" role="menuitem">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section Impresoras -->
+        <section class="hero hero-impresoras" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Servicio Técnico de Impresoras Profesional</h1>
+                    <p class="hero-subtitle">Reparación, mantenimiento y recarga de tintas para todas las marcas con garantía escrita</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20técnico%20para%20mi%20impresora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Solicitar servicio técnico de impresoras por WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            Solicitar Diagnóstico
+                        </a>
+                        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios de Impresoras -->
+        <section class="section servicios-impresoras" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="servicios-title" class="gradient-text">Servicios Especializados en Impresoras</h2>
+                    <p>Soluciones completas para todos los tipos y marcas de impresoras</p>
+                </header>
+                
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Limpieza y calibración completa para optimizar el rendimiento</p>
+                        <div class="servicio-precio"></div>
+                        <ul class="servicio-lista">
+                            <li>Limpieza interna completa</li>
+                            <li>Calibración de cabezales</li>
+                            <li>Verificación de componentes</li>
+                            <li>Lubricación de mecanismos</li>
+                            <li>Test de impresión final</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20quiero%20agendar%20mantenimiento%20preventivo%20para%20mi%20impresora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Agendar Mantenimiento
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-fill-drip"></i>
+                        </div>
+                        <h3>Recarga de Tintas</h3>
+                        <p>Recarga profesional con tintas de alta calidad y duración</p>
+                        <div class="servicio-precio"></div>
+                        <ul class="servicio-lista">
+                            <li>Tintas de máxima calidad</li>
+                            <li>Limpieza de cabezales incluida</li>
+                            <li>Reset de contadores</li>
+                            <li>Test de impresión completo</li>
+                            <li>Garantía en recarga</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20recarga%20de%20tintas%20para%20mi%20impresora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Solicitar Recarga
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Reparación de Hardware</h3>
+                        <p>Solución de problemas mecánicos y electrónicos</p>
+
+                        <ul class="servicio-lista">
+                            <li>Cambio de fusores y rodillos</li>
+                            <li>Reparación de fuentes de poder</li>
+                            <li>Sustitución de motores</li>
+                            <li>Reparación de circuitos</li>
+                            <li>Cambio de sensores</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20reparación%20de%20hardware%20para%20mi%20impresora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Solicitar Reparación
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Instalación y Configuración</h3>
+                        <p>Configuración de red e instalación de drivers</p>
+         >
+                        <ul class="servicio-lista">
+                            <li>Instalación de drivers actualizados</li>
+                            <li>Configuración WiFi y red cableada</li>
+                            <li>Configuración de impresión en red</li>
+                            <li>Instalación múltiple en equipos</li>
+                            <li>Capacitación básica de uso</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20instalación%20y%20configuración%20de%20impresora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Solicitar Instalación
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Venta de Insumos</h3>
+                        <p>Cartuchos originales y alternativos de calidad</p>
+                        <div class="servicio-precio">Consultar</div>
+                        <ul class="servicio-lista">
+                            <li>Cartuchos originales y compatibles</li>
+                            <li>Tóner para impresoras láser</li>
+                            <li>Cintas para impresoras matriciales</li>
+                            <li>Ribbons para punto de venta</li>
+                            <li>Papel especial y consumibles</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20quiero%20consultar%20precios%20de%20cartuchos%20e%20insumos" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Consultar Precios
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Servicio Empresarial</h3>
+                        <p>Planes de mantenimiento para empresas y oficinas</p>
+                        <ul class="servicio-lista">
+                            <li>Mantenimiento preventivo programado</li>
+                            <li>Recargas ilimitadas incluídas</li>
+                            <li>Reparaciones sin costo adicional</li>
+                            <li>Soporte técnico prioritario</li>
+                            <li>Visitas en sitio programadas</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20quiero%20información%20sobre%20servicios%20empresariales%20de%20impresoras" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Plan Empresas
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marcas que Reparamos -->
+        <section class="section marcas-impresoras" aria-labelledby="marcas-title" style="background: var(--section-dark);">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="marcas-title" class="gradient-text">Marcas que Reparamos</h2>
+                    <p>Trabajamos con todas las marcas principales del mercado</p>
+                </header>
+                
+                <div class="marcas-grid">
+                    <div class="marca-item">
+                        <i class="fab fa-hp" aria-hidden="true"></i>
+                        <span>HP</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-print" aria-hidden="true"></i>
+                        <span>Canon</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-print" aria-hidden="true"></i>
+                        <span>Epson</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-print" aria-hidden="true"></i>
+                        <span>Brother</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fab fa-samsung" aria-hidden="true"></i>
+                        <span>Samsung</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-print" aria-hidden="true"></i>
+                        <span>Xerox</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-print" aria-hidden="true"></i>
+                        <span>Lexmark</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-print" aria-hidden="true"></i>
+                        <span>Kyocera</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problemas Comunes -->
+        <section class="section problemas-comunes" id="problemas" aria-labelledby="problemas-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="problemas-title" class="gradient-text">Problemas Comunes que Solucionamos</h2>
+                    <p>Diagnóstico y solución rápida para los problemas más frecuentes en impresoras</p>
+                </header>
+                
+                <div class="problemas-grid">
+                    <article class="problema-card">
+                        <h3>Atascos de Papel</h3>
+                        <p>La impresora traba el papel y no puede continuar imprimiendo</p>
+                        <div class="solucion">
+                            <strong>Solución:</strong> Limpieza de rodillos y verificación de mecanismos
+                        </div>
+                    </article>
+                    
+                    <article class="problema-card">
+                        <h3>Líneas en la Impresión</h3>
+                        <p>Aparecen líneas horizontales o verticales en los documentos</p>
+                        <div class="solucion">
+                            <strong>Solución:</strong> Limpieza de cabezales y calibración
+                        </div>
+                    </article>
+                    
+                    <article class="problema-card">
+                        <h3>Cartuchos no Reconocidos</h3>
+                        <p>La impresora no detecta los cartuchos instalados</p>
+                        <div class="solucion">
+                            <strong>Solución:</strong> Limpieza de contactos y reset del sistema
+                        </div>
+                    </article>
+                    
+                    <article class="problema-card">
+                        <h3>Impresión de Baja Calidad</h3>
+                        <p>Los textos salen borrosos o las imágenes pixeladas</p>
+                        <div class="solucion">
+                            <strong>Solución:</strong> Calibración y limpieza profunda
+                        </div>
+                    </article>
+                    
+                    <article class="problema-card">
+                        <h3>Problemas de Conectividad</h3>
+                        <p>La impresora no se conecta por USB, WiFi o red</p>
+                        <div class="solucion">
+                            <strong>Solución:</strong> Configuración de drivers y red
+                        </div>
+                    </article>
+                    
+                    <article class="problema-card">
+                        <h3>Ruidos Extraños</h3>
+                        <p>La impresora hace ruidos anormales al imprimir</p>
+                        <div class="solucion">
+                            <strong>Solución:</strong> Lubricación y ajuste de mecanismos
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de Trabajo -->
+        <section class="section proceso-impresoras" aria-labelledby="proceso-title" style="background: var(--section-dark);">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="proceso-title" class="gradient-text">Nuestro Proceso de Trabajo</h2>
+                    <p>Así es como solucionamos los problemas de tu impresora de manera profesional</p>
+                </header>
+                
+                <div class="proceso-steps">
+                    <div class="proceso-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Diagnóstico Gratuito</h3>
+                            <p>Evaluamos tu impresora para identificar el problema exacto y te entregamos un presupuesto detallado sin compromiso</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Aprobación del Cliente</h3>
+                            <p>Una vez que apruebes el presupuesto, procedemos inmediatamente con la reparación o servicio solicitado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Reparación Profesional</h3>
+                            <p>Nuestros técnicos especializados realizan el servicio con repuestos de calidad y herramientas profesionales</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Pruebas y Entrega</h3>
+                            <p>Realizamos pruebas exhaustivas y te entregamos tu impresora funcionando perfectamente con garantía por escrito</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <!-- CTA Final -->
+        <section class="section cta-impresoras" aria-labelledby="cta-title" style="background: var(--gradient-primary); color: var(--dark-bg);">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">¿Problemas con tu Impresora?</h2>
+                    <p>No esperes más. Contáctanos y recibe atención técnica especializada con la garantía de Andescomputacion</p>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20técnico%20para%20mi%20impresora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            WhatsApp Urgente
+                        </a>
+                        <a href="tel:+56961938981" class="btn btn-primary">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-andescomputacion.png" alt="Logo Andescomputacion" width="150" height="50">
+                    <h3>Andescomputacion</h3>
+                    <p>Tu solución tecnológica integral. Especialistas en componentes, servicio técnico e instalación de sistemas de seguridad en Los Andes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/56961938981" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios de Impresoras</h4>
+                    <ul>
+                        <li><a href="#servicios">Mantenimiento Preventivo</a></li>
+                        <li><a href="#servicios">Recarga de Tintas</a></li>
+                        <li><a href="#servicios">Reparación Hardware</a></li>
+                        <li><a href="#servicios">Instalación y Configuración</a></li>
+                        <li><a href="#servicios">Venta de Insumos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        Yerbas Buenas 381, 2100000 Los Andes, Valparaíso
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        +56 9 6193 8981
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        info@andescomputacion.cl
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Lun-Vie: 10:00-19:00 | Sáb: 10:00-14:00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Andescomputacion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animaciones.js" defer></script>
+    
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20técnico%20para%20mi%20impresora" 
+       class="whatsapp-float" 
+       aria-label="Contactar por WhatsApp para servicio técnico de impresoras"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-badge">!</span>
+    </a>
+</body>
+</html>

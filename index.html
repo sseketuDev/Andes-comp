@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andescomputacion - Especialistas en Tecnología | Los Andes</title>
+    <meta name="description" content="Venta de componentes de computación, servicio técnico profesional e instalación de sistemas de seguridad en Los Andes. Tu solución tecnológica integral.">
+    <meta name="keywords" content="computación Los Andes, servicio técnico, componentes PC, reparación notebooks, cámaras seguridad, Andescomputacion">
+    <meta name="author" content="Andescomputacion">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="main.css" as="style">
+    <link rel="preload" href="components.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="nosotros.css">
+
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    
+    <!-- Schema.org para negocio local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ComputerStore",
+        "name": "Andescomputacion",
+        "description": "Especialistas en tecnología en Los Andes - Venta de componentes, servicio técnico profesional e instalación de sistemas de seguridad",
+        "url": "https://andescomputacion.cl",
+        "telephone": "+56-9-6193-8981",
+        "email": "info@andescomputacion.cl",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Yerbas Buenas 381",
+            "addressLocality": "Los Andes",
+            "addressRegion": "Valparaíso",
+            "postalCode": "2100000",
+            "addressCountry": "CL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-32.8366",
+            "longitude": "-70.5977"
+        },
+        "openingHours": [
+            "Mo-Fr 10:00-19:00",
+            "Sa 10:00-14:00"
+        ],
+        "priceRange": "$$",
+        "areaServed": "Los Andes y alrededores"
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header id="main-header" class="header" role="banner">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Andescomputacion - Página de inicio">
+                <img src="logo.png" 
+                     alt="Logo Andescomputacion" 
+                     width="150" 
+                     height="50"
+                     loading="eager">
+                <h1 class="gradient-text">Andescomputacion</h1>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menú principal">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav id="main-nav" class="nav-main" aria-label="Navegación principal">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem" aria-current="page">Inicio</a></li>
+                    <li role="none"><a href="productos.html" role="menuitem">Productos</a></li>
+                    <li role="none"><a href="nosotros.html" role="menuitem">Nosotros</a></li>
+                    <li role="none"><a href="contacto.html" role="menuitem">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Especialistas en Tecnología en Los Andes</h1>
+                    <p class="hero-subtitle">Venta de componentes, servicio técnico profesional e instalación de sistemas de seguridad. Tu solución tecnológica integral.</p>
+                    <div class="hero-actions">
+                        <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                        <a href="https://wa.me/56961938981" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Contactar por WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            Consultar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section class="section servicios" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="servicios-title" class="gradient-text">Nuestros Servicios</h2>
+                    <p>Soluciones tecnológicas completas para particulares y empresas en Los Andes</p>
+                </header>
+                
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Venta de Componentes</h3>
+                        <p>Amplio stock de componentes de computación de primeras marcas y máxima calidad.</p>
+                        <a href="servicios.html#venta-componentes" class="btn btn-primary">Ver más</a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Servicio Técnico</h3>
+                        <p>Diagnóstico, reparación y mantenimiento de equipos informáticos con garantía.</p>
+                        <a href="serviciotecnico.html" class="btn btn-primary">Ver más</a>
+                    </article>
+                    
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3>Servicio de Impresoras</h3>
+                        <p>Mantenimiento, reparación y venta de insumos para impresoras.</p>
+                        <a href="impresoras.html" class="btn btn-primary">Ver más</a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Instalación de Cámaras</h3>
+                        <p>Sistemas de seguridad con cámaras HD y tecnología de punta.</p>
+                        <a href="camara.html" class="btn btn-primary">Ver más</a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Redes y Conectividad</h3>
+                        <p>Instalación y configuración de redes cableadas e inalámbricas.</p>
+                        <a href="redes-conectividad.html" class="btn btn-primary">Ver más</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="section productos-destacados" id="productos" aria-labelledby="productos-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="productos-title" class="gradient-text">Productos Destacados</h2>
+                    <p>Componentes de computación de alta calidad para armado y actualización</p>
+                </header>
+                
+                <div class="categorias-filtro">
+                    <button class="categoria-btn active" data-categoria="todos" aria-pressed="true">Todos</button>
+                    <button class="categoria-btn" data-categoria="tarjetas-graficas" aria-pressed="false">Tarjetas Gráficas</button>
+                    <button class="categoria-btn" data-categoria="procesadores" aria-pressed="false">Procesadores</button>
+                    <button class="categoria-btn" data-categoria="almacenamiento" aria-pressed="false">Almacenamiento</button>
+                    <button class="categoria-btn" data-categoria="perifericos" aria-pressed="false">Periféricos</button>
+                </div>
+                
+                <div class="productos-grid">
+                    <!-- Productos se cargarán dinámicamente -->
+                    <article class="producto-card" data-categoria="tarjetas-graficas">
+                        <div class="producto-badge">Nuevo</div>
+                        <div class="producto-img">
+                            <img src="images/placeholder-product.jpg" data-src="images/products/rtx-4070.jpg" alt="NVIDIA GeForce RTX 4070" class="lazy" loading="lazy">
+                        </div>
+                        <div class="producto-info">
+                            <h3>NVIDIA GeForce RTX 4070</h3>
+                            <p class="producto-desc">Tarjeta gráfica de alto rendimiento para gaming 4K</p>
+                            <div class="producto-especificaciones">
+                                <div class="especificacion">
+                                    <span>Memoria:</span>
+                                    <span>12GB GDDR6X</span>
+                                </div>
+                                <div class="especificacion">
+                                    <span>Interfaz:</span>
+                                    <span>PCIe 4.0</span>
+                                </div>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio">$699.990</span>
+                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20la%20NVIDIA%20GeForce%20RTX%204070" 
+                                   class="btn btn-whatsapp"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Más productos... -->
+                </div>
+                
+                <div class="text-center" style="margin-top: var(--space-xl);">
+                    <a href="productos.html" class="btn btn-primary">Ver Todos los Productos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros -->
+
+<section class="section sobre-nosotros" id="nosotros" aria-labelledby="nosotros-title">
+    <div class="container">
+        <div class="sobre-content">
+            <div class="sobre-text">
+                <h2 id="nosotros-title" class="gradient-text">Tu Solución Tecnológica en Los Andes</h2>
+                <p>Con más de 10 años de experiencia, Andescomputacion es tu aliado confiable en tecnología. Ofrecemos soluciones integrales que incluyen venta de componentes, servicio técnico profesional e instalación de sistemas de seguridad.</p>
+                <p>Nos enorgullecemos de brindar atención personalizada y productos de calidad con garantía, respaldados por miles de clientes satisfechos en el valle del Aconcagua.</p>
+                
+                <div class="sobre-stats">
+                    <div class="stat">
+                        <div class="stat-number">+10</div>
+                        <div class="stat-text">Años de Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">+5.000</div>
+                        <div class="stat-text">Clientes Satisfechos</div>
+                    </div>
+                </div>
+                
+                <a href="nosotros.html" class="btn btn-primary" style="margin-top: var(--space-lg);">
+                    Conoce Nuestra Historia
+                </a>
+            </div>
+            <div class="sobre-image">
+                <img src="andesportada.jpg" data-src="andesportada.jpg" alt="Equipo de Andescomputacion" class="lazy" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contacto -->
+       <!-- Contacto Directo WhatsApp -->
+<section class="section contacto-directo" aria-labelledby="contacto-directo-title">
+    <div class="container">
+        <header class="section-header">
+            <h2 id="contacto-directo-title" class="gradient-text">Contacto Directo por WhatsApp</h2>
+            <p>Comunícate directamente con nosotros para una respuesta inmediata</p>
+        </header>
+        
+        <div class="contacto-whatsapp-grid">
+            <div class="contacto-whatsapp-item">
+                <div class="whatsapp-icon-large">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>Ventas</h3>
+                <p>Consulta por productos y precios</p>
+                <a href="https://wa.me/56961938981?text=Hola,%20quisiera%20consultar%20por%20sus%20productos" 
+                   class="btn btn-whatsapp-full" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Contactar Ventas
+                </a>
+            </div>
+            
+            <div class="contacto-whatsapp-item">
+                <div class="whatsapp-icon-large">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>Soporte Técnico</h3>
+                <p>Asistencia y reparaciones</p>
+                <a href="https://wa.me/56961938981?text=Hola,%20necesito%20soporte%20técnico" 
+                   class="btn btn-whatsapp-full" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Soporte Técnico
+                </a>
+            </div>
+            
+            <div class="contacto-whatsapp-item">
+                <div class="whatsapp-icon-large">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>Cotizaciones</h3>
+                <p>Solicita tu cotización personalizada</p>
+                <a href="https://wa.me/56961938981?text=Hola,%20quisiera%20solicitar%20una%20cotización" 
+                   class="btn btn-whatsapp-full" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Pedir Cotización
+                </a>
+            </div>
+        </div>
+        
+        <!-- Chat de ejemplo -->
+        <div class="chat-preview">
+            <div class="chat-message">
+                Hola, ¿tienen la NVIDIA RTX 4070 en stock?
+            </div>
+            <div class="chat-message">
+                ¡Hola! Sí, tenemos stock. Precio: $699.990 ¿Te interesa?
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulario de Contacto Actualizado -->
+<section class="section contacto" id="contacto" aria-labelledby="contacto-title">
+    <div class="container">
+        <header class="section-header">
+            <h2 id="contacto-title" class="gradient-text">Envíanos un Mensaje</h2>
+            <p>Completa el formulario y te contactaremos por WhatsApp</p>
+        </header>
+        
+        <div class="whatsapp-form">
+            <form id="form-contacto-whatsapp">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="servicio">Servicio de Interés *</label>
+                    <select id="servicio" name="servicio" class="form-control" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="venta-componentes">Venta de Componentes</option>
+                        <option value="servicio-tecnico">Servicio Técnico</option>
+                        <option value="reparacion-notebooks">Reparación de Notebooks</option>
+                        <option value="instalacion-camaras">Instalación de Cámaras</option>
+                        <option value="servicio-impresoras">Servicio de Impresoras</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" required 
+                              placeholder="Describe tu consulta o requerimiento..."></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-whatsapp-full">
+                        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    </button>
+                    <a href="https://wa.me/56961938981" 
+                       class="btn btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Chat Directo
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo-andes-computacion.png" alt="Logo Andescomputacion" width="150" height="50">
+                    <h3>Andescomputacion</h3>
+                    <p>Tu solución tecnológica integral. Especialistas en componentes, servicio técnico e instalación de sistemas de seguridad en Los Andes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/56961938981" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#venta-componentes">Venta de Componentes</a></li>
+                        <li><a href="servicios.html#servicio-tecnico">Servicio Técnico</a></li>
+                        <li><a href="servicios.html#reparacion-notebooks">Reparación de Notebooks</a></li>
+                        <li><a href="servicios.html#instalacion-camaras">Instalación de Cámaras</a></li>
+                        <li><a href="impresoras.html">Servicio de Impresoras</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        Yerbas Buenas 381, 2100000 Los Andes, Valparaíso
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        +56 9 6193 8981
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        info@andescomputacion.cl
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Lun-Vie: 10:00-19:00 | Sáb: 10:00-14:00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andescomputacion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/product-filter.js" defer></script>
+    <script src="js/whatsapp-integration.js" defer></script>
+    <a href="#" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-badge">1</span>
+</a>
+
+</body>
+</html>
