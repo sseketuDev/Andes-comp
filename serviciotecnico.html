@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico Profesional | Andescomputacion Los Andes</title>
+    <meta name="description" content="Servicio técnico profesional en Los Andes. Reparación de computadoras, notebooks, impresoras y equipos tecnológicos. Diagnóstico gratuito y garantía.">
+    <meta name="keywords" content="servicio técnico Los Andes, reparación computadoras, reparación notebooks, mantenimiento equipos, soporte técnico">
+    <meta name="author" content="Andescomputacion">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="css/components.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo andes computacion.png">
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header id="main-header" class="header" role="banner">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Andescomputacion - Página de inicio">
+                <img src="logo andes computacion.png" 
+                     alt="Logo Andescomputacion" 
+                     width="150" 
+                     height="50"
+                     loading="eager">
+                <h1 class="gradient-text">Andescomputacion</h1>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menú principal">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav id="main-nav" class="nav-main" aria-label="Navegación principal">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="servicios.html" role="menuitem" aria-current="page">Servicios</a></li>
+                    <li role="none"><a href="productos.html" role="menuitem">Productos</a></li>
+                    <li role="none"><a href="nosotros.html" role="menuitem">Nosotros</a></li>
+                    <li role="none"><a href="contacto.html" role="menuitem">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section Servicio Técnico -->
+        <section class="hero" aria-labelledby="hero-title" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('\serviciotec.jpg') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Servicio Técnico Profesional</h1>
+                    <p class="hero-subtitle">Reparación, mantenimiento y optimización de equipos informáticos con garantía y calidad garantizada</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20técnico" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Solicitar servicio técnico por WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            Solicitar Diagnóstico
+                        </a>
+                        <a href="#diagnostico" class="btn btn-primary">Diagnóstico Gratuito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios de Reparación -->
+        <section class="section servicios-reparacion" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="servicios-title" class="gradient-text">Nuestros Servicios Técnicos</h2>
+                    <p>Soluciones integrales para todos tus equipos tecnológicos</p>
+                </header>
+                
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Reparación de Computadoras</h3>
+                        <p>Diagnóstico y reparación de torres, actualización de componentes y optimización del sistema.</p>
+                        <ul class="servicio-lista">
+                            <li>Limpieza interna y externa</li>
+                            <li>Cambio de componentes</li>
+                            <li>Instalación de sistemas operativos</li>
+                            <li>Eliminación de virus y malware</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20reparación%20de%20computadora" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Consultar
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Reparación de Notebooks</h3>
+                        <p>Especialistas en reparación de laptops de todas las marcas y modelos.</p>
+                        <ul class="servicio-lista">
+                            <li>Cambio de pantallas</li>
+                            <li>Reparación de teclados</li>
+                            <li>Limpieza interna profunda</li>
+                            <li>Reparación de fuentes de poder</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20reparación%20de%20notebook" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Consultar
+                        </a>
+                    </article>
+                    
+                   
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <h3>Recuperación de Datos</h3>
+                        <p>Recuperamos tu información importante de discos duros dañados.</p>
+                        <ul class="servicio-lista">
+                            <li>Discos duros dañados</li>
+                            <li>USB corruptos</li>
+                            <li>Tarjetas de memoria</li>
+                            <li>Backup de información</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20recuperación%20de%20datos" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Consultar
+                        </a>
+                    </article>
+                    
+                
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon" aria-hidden="true">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Seguridad Informática</h3>
+                        <p>Protección contra virus, malware y amenazas digitales.</p>
+                        <ul class="servicio-lista">
+                            <li>Instalación de antivirus</li>
+                            <li>Limpieza de malware</li>
+                            <li>Configuración de firewall</li>
+                            <li>Backup y seguridad</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20de%20seguridad" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Consultar
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de Reparación -->
+        <section class="section proceso-reparacion" id="proceso" aria-labelledby="proceso-title" style="background: var(--section-dark);">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="proceso-title" class="gradient-text">Nuestro Proceso de Reparación</h2>
+                    <p>Transparencia y calidad en cada paso del servicio</p>
+                </header>
+                
+                <div class="proceso-steps">
+                    <div class="proceso-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Diagnóstico</h3>
+                            <p>Evaluamos tu equipo para identificar el problema exacto.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Cotización Transparente</h3>
+                            <p>Te entregamos un presupuesto detallado sin sorpresas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Reparación Profesional</h3>
+                            <p>Nuestros técnicos certificados realizan la reparación.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Pruebas de Calidad</h3>
+                            <p>Verificamos que todo funcione perfectamente antes de la entrega.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="proceso-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Garantía del Servicio</h3>
+                            <p>Tu tranquilidad es nuestra prioridad. Todos nuestros trabajos tienen garantía.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Marcas que Reparamos -->
+        <section class="section marcas" aria-labelledby="marcas-title" style="background: var(--section-dark);">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="marcas-title" class="gradient-text">Marcas que Reparamos</h2>
+                    <p>Trabajamos con todas las marcas principales del mercado</p>
+                </header>
+                
+                <div class="marcas-grid">
+                    <div class="marca-item">
+                        <i class="fab fa-windows" aria-hidden="true"></i>
+                        <span>Windows</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fab fa-apple" aria-hidden="true"></i>
+                        <span>Apple</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-laptop" aria-hidden="true"></i>
+                        <span>HP</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-desktop" aria-hidden="true"></i>
+                        <span>Dell</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        <span>Lenovo</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-tv" aria-hidden="true"></i>
+                        <span>Acer</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-keyboard" aria-hidden="true"></i>
+                        <span>Asus</span>
+                    </div>
+                    <div class="marca-item">
+                        <i class="fas fa-microchip" aria-hidden="true"></i>
+                        <span>Toshiba</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="section faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="faq-title" class="gradient-text">Preguntas Frecuentes</h2>
+                    <p>Resolvemos tus dudas sobre nuestro servicio técnico</p>
+                </header>
+                
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Cuánto tiempo toma una reparación?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>El tiempo varía según la complejidad del problema. Reparaciones simples pueden tomar 1-2 horas, mientras que problemas más complejos pueden requerir 24-48 horas. Siempre te daremos un tiempo estimado después del diagnóstico.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Ofrecen garantía en las reparaciones?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Sí, todas nuestras reparaciones incluyen garantía. La duración depende del servicio realizado, generalmente entre 30 y 90 días. Te entregaremos un comprobante de garantía con todos los detalles.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Realizan reparaciones a domicilio?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Ofrecemos servicio a domicilio para instalaciones de redes, cámaras de seguridad y equipos específicos. Para reparaciones generales, recomendamos traer el equipo a nuestro taller para un mejor diagnóstico y reparación.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Trabajan con repuestos originales?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Trabajamos con repuestos originales y de alta calidad. Siempre te consultaremos sobre las opciones disponibles y sus costos antes de proceder con cualquier cambio.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Puedo dejar mi equipo fuera del horario de atención?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Sí, contamos con un sistema de recepción fuera de horario. Comunícate con nosotros para coordinar la entrega de tu equipo.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="section cta-final" aria-labelledby="cta-title" style="background: var(--gradient-primary); color: var(--dark-bg);">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">¿Necesitas Servicio Técnico?</h2>
+                    <p>No esperes más, contáctanos y solucionaremos tu problema tecnológico</p>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20técnico%20urgente" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            WhatsApp Urgente
+                        </a>
+                        <a href="tel:+56961938981" class="btn btn-primary">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="andesportada.jpg" alt="Logo Andescomputacion" width="150" height="50">
+                    <h3>Andescomputacion</h3>
+                    <p>Tu solución tecnológica integral. Especialistas en componentes, servicio técnico e instalación de sistemas de seguridad en Los Andes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/56961938981" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios Técnicos</h4>
+                    <ul>
+                        <li><a href="#servicios">Reparación Computadoras</a></li>
+                        <li><a href="#servicios">Reparación Notebooks</a></li>
+                        <li><a href="#servicios">Servicio Impresoras</a></li>
+                        <li><a href="#servicios">Recuperación de Datos</a></li>
+                        <li><a href="#servicios">Redes y Conectividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        Yerbas Buenas 381, 2100000 Los Andes, Valparaíso
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        +56 9 6193 8981
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        info@andescomputacion.cl
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Lun-Vie: 10:00-19:00 | Sáb: 10:00-14:00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andescomputacion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/56961938981?text=Hola,%20necesito%20servicio%20técnico" 
+       class="whatsapp-float" 
+       aria-label="Contactar por WhatsApp para servicio técnico"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-badge">!</span>
+    </a>
+</body>
+</html>

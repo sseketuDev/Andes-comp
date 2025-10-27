@@ -1,0 +1,105 @@
+/* ===== MEJORAS PARA SECCIÓN SOBRE NOSOTROS ===== */
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.sobre-text h2 {
+    margin-bottom: var(--space-lg);
+    font-size: 2.5rem;
+}
+
+.sobre-text p {
+    margin-bottom: var(--space-md);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.sobre-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+    padding: var(--space-lg);
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.stat-text {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.sobre-image {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-heavy);
+}
+
+.sobre-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.sobre-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: var(--white);
+    padding: var(--space-lg) var(--space-md) var(--space-md);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.image-caption i {
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .sobre-text h2 {
+        font-size: 2rem;
+    }
+    
+    .sobre-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}

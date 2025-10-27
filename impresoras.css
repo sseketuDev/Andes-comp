@@ -1,0 +1,264 @@
+/* ===== ESTILOS ESPECÍFICOS PARA PÁGINA DE IMPRESORAS ===== */
+
+/* Hero específico para impresoras */
+.hero-impresoras {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('impresorairl.jpg') center/cover no-repeat;
+}
+
+/* Precios en servicios */
+.servicio-precio {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--cyan);
+    margin: var(--space-md) 0;
+    text-align: center;
+}
+
+/* Lista de servicios mejorada */
+.servicio-lista {
+    list-style: none;
+    margin: var(--space-md) 0;
+    padding: 0;
+    text-align: left;
+}
+
+.servicio-lista li {
+    padding: var(--space-xs) 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.servicio-lista li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Grid de marcas */
+.marcas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--space-md);
+    text-align: center;
+}
+
+.marca-item {
+    background: var(--card-bg);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.marca-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
+}
+
+.marca-item span {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+/* Problemas comunes */
+.problemas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.problema-card {
+    background: var(--card-bg);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--cyan);
+    transition: all 0.3s ease;
+}
+
+.problema-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.problema-card h3 {
+    color: var(--cyan);
+    margin-bottom: var(--space-sm);
+    font-size: 1.2rem;
+}
+
+.problema-card p {
+    color: var(--text-light);
+    margin-bottom: var(--space-md);
+}
+
+.solucion {
+    background: rgba(0, 255, 136, 0.1);
+    padding: var(--space-sm);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Proceso de trabajo */
+.proceso-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.proceso-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.proceso-step:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-medium);
+}
+
+.step-number {
+    background: var(--gradient-primary);
+    color: var(--dark-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-bottom: var(--space-xs);
+    color: var(--primary-color);
+}
+
+/* Garantía */
+.garantia-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-xl);
+    align-items: center;
+    background: var(--card-bg);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+}
+
+.garantia-text h2 {
+    margin-bottom: var(--space-md);
+}
+
+.garantia-tiempos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-xl) 0;
+}
+
+.garantia-item {
+    text-align: center;
+    padding: var(--space-md);
+    background: var(--dark-bg);
+    border-radius: var(--border-radius);
+}
+
+.garantia-dias {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cyan);
+    margin-bottom: var(--space-xs);
+}
+
+.garantia-tipo {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.garantia-cita {
+    background: rgba(0, 255, 136, 0.1);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    font-style: italic;
+    color: var(--text-light);
+    margin: var(--space-lg) 0 0;
+}
+
+.garantia-badge {
+    background: var(--gradient-primary);
+    color: var(--dark-bg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+.garantia-badge i {
+    font-size: 3rem;
+    margin-bottom: var(--space-xs);
+}
+
+.garantia-badge span {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* CTA específico */
+.cta-impresoras .cta-content {
+    text-align: center;
+}
+
+.cta-impresoras h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.cta-impresoras p {
+    margin-bottom: var(--space-lg);
+    font-size: 1.2rem;
+}
+
+.cta-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {                                         
+    .garantia-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--space-lg);
+    }
+}

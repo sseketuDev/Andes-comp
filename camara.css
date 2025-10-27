@@ -1,0 +1,485 @@
+/* ===== ESTILOS ESPECÍFICOS PARA PÁGINA DE CÁMARAS DE SEGURIDAD ===== */
+
+/* Hero específico para cámaras */
+.hero-camaras {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('../images/camaras-hero.jpg') center/cover no-repeat;
+}
+
+/* Beneficios */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.beneficio-card {
+    background: var(--card-bg);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.beneficio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.beneficio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.beneficio-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    font-size: 2rem;
+    color: var(--dark-bg);
+}
+
+.beneficio-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+}
+
+.beneficio-card p {
+    color: var(--text-light);
+}
+
+/* Tipos de cámaras */
+.tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.tipo-card {
+    background: var(--card-bg);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tipo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.tipo-imagen {
+    width: 100px;
+    height: 100px;
+    background: var(--gradient-cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    font-size: 2.5rem;
+    color: var(--dark-bg);
+}
+
+.tipo-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+}
+
+.tipo-card p {
+    color: var(--text-light);
+    margin-bottom: var(--space-md);
+}
+
+.tipo-caracteristicas {
+    list-style: none;
+    margin: var(--space-md) 0;
+    padding: 0;
+    text-align: left;
+}
+
+.tipo-caracteristicas li {
+    padding: var(--space-xs) 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.tipo-caracteristicas li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.tipo-precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cyan);
+    margin: var(--space-md) 0;
+    text-align: center;
+}
+
+/* Paquetes de instalación */
+.paquetes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.paquete-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.paquete-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.paquete-card.destacado {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.paquete-card.destacado:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.paquete-badge {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: var(--gradient-primary);
+    color: var(--dark-bg);
+    padding: 8px 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.paquete-header {
+    background: var(--dark-bg);
+    padding: var(--space-lg);
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.paquete-header h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.paquete-precio {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
+}
+
+.paquete-desc {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.paquete-contenido {
+    padding: var(--space-xl);
+}
+
+.paquete-lista {
+    list-style: none;
+    margin: 0 0 var(--space-lg) 0;
+    padding: 0;
+}
+
+.paquete-lista li {
+    padding: var(--space-sm) 0;
+    position: relative;
+    padding-left: 30px;
+    color: var(--text-light);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.paquete-lista li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.paquete-lista li:last-child {
+    border-bottom: none;
+}
+
+.paquete-garantia {
+    text-align: center;
+    color: var(--cyan);
+    font-weight: bold;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-sm);
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.personalizado-cta {
+    background: var(--card-bg);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border-left: 4px solid var(--primary-color);
+}
+
+.personalizado-cta h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--white);
+}
+
+.personalizado-cta p {
+    color: var(--text-light);
+    margin-bottom: var(--space-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Proceso de instalación */
+.proceso-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.proceso-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding: var(--space-xl);
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.proceso-step:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-medium);
+}
+
+.proceso-step::before {
+    content: '';
+    position: absolute;
+    left: 85px;
+    top: 80px;
+    bottom: -35px;
+    width: 2px;
+    background: var(--gradient-primary);
+    z-index: 1;
+}
+
+.proceso-step:last-child::before {
+    display: none;
+}
+
+.step-number {
+    background: var(--gradient-primary);
+    color: var(--dark-bg);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.step-content h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.step-content p {
+    color: var(--text-light);
+}
+
+/* FAQ - Actualizado con texto ejemplo */
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-md);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-medium);
+}
+
+.faq-question {
+    padding: var(--space-lg);
+    background: var(--dark-bg);
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    position: relative;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: var(--space-lg);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: var(--space-lg);
+    color: var(--text-light);
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.texto-ejemplo {
+    background: rgba(0, 255, 136, 0.1);
+    padding: var(--space-md);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-color);
+    margin-top: var(--space-md);
+    font-size: 0.9rem;
+}
+
+.texto-ejemplo strong {
+    color: var(--primary-color);
+}
+
+/* CTA específico */
+.cta-camaras .cta-content {
+    text-align: center;
+}
+
+.cta-camaras h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.cta-camaras p {
+    margin-bottom: var(--space-lg);
+    font-size: 1.2rem;
+}
+
+.cta-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .proceso-step {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+    }
+    
+    .proceso-step::before {
+        display: none;
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+    
+    .paquetes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .paquete-card.destacado {
+        transform: none;
+    }
+    
+    .paquete-card.destacado:hover {
+        transform: translateY(-10px);
+    }
+    
+    .tipos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .paquete-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .paquete-precio {
+        font-size: 2rem;
+    }
+    
+    .proceso-step {
+        padding: var(--space-lg);
+    }
+    
+    .step-number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Animaciones específicas */
+@keyframes security-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+}
+
+.paquete-card.destacado {
+    animation: security-pulse 2s infinite;
+}
+
+.beneficio-icon {
+    animation: security-pulse 3s infinite;
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes y Conectividad Profesional | Andescomputacion Los Andes</title>
+    <meta name="description" content="Instalación y configuración profesional de redes cableadas e inalámbricas en Los Andes. WiFi empresarial, cableado estructurado y soluciones de conectividad.">
+    <meta name="keywords" content="redes computación Los Andes, instalación WiFi, cableado estructurado, redes empresariales, conectividad, routers, switches">
+    <meta name="author" content="Andescomputacion">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="main.css" as="style">
+    <link rel="preload" href="components.css" as="style">
+    <link rel="preload" href="css/redes.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="redes.css">
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo andes computacion.png">
+    
+    <!-- Schema.org para Servicio de Redes -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Instalación de Redes y Conectividad",
+        "description": "Servicios profesionales de instalación y configuración de redes cableadas e inalámbricas",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Andescomputacion",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Yerbas Buenas 381",
+                "addressLocality": "Los Andes",
+                "addressRegion": "Valparaíso",
+                "postalCode": "2100000",
+                "addressCountry": "CL"
+            },
+            "telephone": "+56-9-6193-8981"
+        },
+        "areaServed": "Los Andes y alrededores",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Redes",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Instalación de Red WiFi"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Cableado Estructurado"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header id="main-header" class="header" role="banner">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Andescomputacion - Página de inicio">
+                <img src="logo andes computacion.png" 
+                     alt="Logo Andescomputacion" 
+                     width="150" 
+                     height="50"
+                     loading="eager">
+                <h1 class="gradient-text">Andescomputacion</h1>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menú principal">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav id="main-nav" class="nav-main" aria-label="Navegación principal">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="servicios.html" role="menuitem">Servicios</a></li>
+                    <li role="none"><a href="productos.html" role="menuitem">Productos</a></li>
+                    <li role="none"><a href="nosotros.html" role="menuitem">Nosotros</a></li>
+                    <li role="none"><a href="contacto.html" role="menuitem">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section Redes -->
+        <section class="hero hero-redes" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Soluciones Profesionales de Redes y Conectividad</h1>
+                    <p class="hero-subtitle">Instalación y configuración de redes cableadas e inalámbricas para hogares y empresas en Los Andes</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20asesoría%20para%20instalación%20de%20redes%20y%20conectividad" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Solicitar asesoría de redes por WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            Solicitar Asesoría
+                        </a>
+                        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios de Redes -->
+        <section class="section servicios-redes" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="servicios-title" class="gradient-text">Nuestros Servicios de Redes</h2>
+                    <p>Soluciones completas de conectividad para todos tus dispositivos</p>
+                </header>
+                
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-wifi" aria-hidden="true"></i>
+                        </div>
+                        <h3>Instalación de Red WiFi</h3>
+                        <p>Configuración optimizada de routers y puntos de acceso para máxima cobertura y velocidad en todo tu hogar u oficina</p>
+                        <ul class="servicio-lista">
+                            <li>Análisis profesional de cobertura del área</li>
+                            <li>Configuración avanzada de routers</li>
+                            <li>Optimización de señal WiFi para múltiples dispositivos</li>
+                            <li>Configuración de seguridad y contraseñas robustas</li>
+                            <li>Conexión y configuración de todos tus dispositivos</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20instalación%20de%20red%20WiFi" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Solicitar Instalación WiFi
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-network-wired" aria-hidden="true"></i>
+                        </div>
+                        <h3>Cableado Estructurado</h3>
+                        <p>Instalación profesional de cableado de red para máxima velocidad, estabilidad y confiabilidad en conexiones cableadas</p>
+                        <ul class="servicio-lista">
+                            <li>Cableado CAT6/CAT6A de alta velocidad</li>
+                            <li>Instalación discreta de rosetas y conectores</li>
+                            <li>Patch panels organizados y etiquetados</li>
+                            <li>Certificación y prueba de todos los cables instalados</li>
+                            <li>Documentación completa de la red instalada</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20instalación%20de%20cableado%20estructurado" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Solicitar Cableado
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                        </div>
+                        <h3>Redes Empresariales</h3>
+                        <p>Soluciones de red escalables y robustas para empresas y oficinas con múltiples usuarios y requerimientos avanzados</p>
+                        <ul class="servicio-lista">
+                            <li>Switches administrables para control total</li>
+                            <li>VLANs y segmentación de red para seguridad</li>
+                            <li>Control y monitoreo de ancho de banda</li>
+                            <li>Configuración de redes para VoIP y videoconferencias</li>
+                            <li>Monitoreo continuo y soporte especializado</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20solución%20de%20redes%20empresariales" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Consultar Red Empresarial
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Seguridad de Red</h3>
+                        <p>Protección avanzada para tu red contra amenazas externas, accesos no autorizados y vulnerabilidades de seguridad</p>
+                        <ul class="servicio-lista">
+                            <li>Configuración de firewall y reglas de seguridad</li>
+                            <li>Filtrado de contenido y control parental</li>
+                            <li>Configuración de VPN para acceso remoto seguro</li>
+                            <li>Monitoreo proactivo de seguridad de red</li>
+                            <li>Auditoría completa de seguridad existente</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20configuración%20de%20seguridad%20de%20red" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Proteger Mi Red
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-satellite-dish" aria-hidden="true"></i>
+                        </div>
+                        <h3>Redes Inalámbricas Exteriores</h3>
+                        <p>Soluciones de WiFi para exteriores, patios, jardines y áreas extensas con equipos resistentes a la intemperie</p>
+                        <ul class="servicio-lista">
+                            <li>Access points exteriores profesionales</li>
+                            <li>Antenas direccionales para enlaces largos</li>
+                            <li>Enlaces punto a punto entre edificios</li>
+                            <li>Equipos certificados resistentes a la intemperie</li>
+                            <li>Cobertura garantizada hasta 500 metros</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20red%20WiFi%20para%20exteriores" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            WiFi para Exteriores
+                        </a>
+                    </article>
+                    
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-tools" aria-hidden="true"></i>
+                        </div>
+                        <h3>Mantenimiento y Soporte</h3>
+                        <p>Mantenimiento preventivo y soporte técnico continuo para mantener tus redes funcionando de manera óptima</p>
+                        <ul class="servicio-lista">
+                            <li>Monitoreo continuo del rendimiento de red</li>
+                            <li>Actualizaciones de firmware y seguridad</li>
+                            <li>Resolución rápida de problemas de conectividad</li>
+                            <li>Optimización periódica del rendimiento</li>
+                            <li>Soporte remoto y presencial incluido</li>
+                        </ul>
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20mantenimiento%20de%20redes" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Plan de Mantenimiento
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="section beneficios-redes" id="beneficios" aria-labelledby="beneficios-title" style="background: var(--section-dark);">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="beneficios-title" class="gradient-text">Ventajas de una Red Profesional</h2>
+                    <p>Maximiza el rendimiento y seguridad de tu conectividad con nuestra instalación especializada</p>
+                </header>
+                
+                <div class="beneficios-grid">
+                    <article class="beneficio-card">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Máxima Velocidad</h3>
+                        <p>Aprovecha el 100% de tu ancho de banda contratado con configuración optimizada y equipos de calidad</p>
+                    </article>
+                    
+                    <article class="beneficio-card">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-expand-arrows-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Cobertura Total</h3>
+                        <p>Elimina zonas muertas y obtén señal estable en toda tu propiedad con una planificación profesional</p>
+                    </article>
+                    
+                    <article class="beneficio-card">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <h3>Seguridad Avanzada</h3>
+                        <p>Protección robusta contra intrusiones y amenazas con configuración de seguridad empresarial</p>
+                    </article>
+                    
+                    <article class="beneficio-card">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h3>Múltiples Dispositivos</h3>
+                        <p>Conecta todos tus dispositivos simultáneamente sin pérdida de rendimiento ni velocidad</p>
+                    </article>
+                    
+                    <article class="beneficio-card">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-plug" aria-hidden="true"></i>
+                        </div>
+                        <h3>Estabilidad Garantizada</h3>
+                        <p>Conexiones estables y confiables sin cortes inesperados ni fluctuaciones de señal</p>
+                    </article>
+                    
+                    <article class="beneficio-card">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <h3>Soporte Profesional</h3>
+                        <p>Asistencia técnica especializada y respuesta rápida cuando necesites ayuda con tu red</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipos que Instalamos -->
+        <section class="section equipos-redes" id="equipos" aria-labelledby="equipos-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="equipos-title" class="gradient-text">Equipos que Instalamos y Configuramos</h2>
+                    <p>Trabajamos con las mejores marcas del mercado para garantizar calidad y rendimiento en cada instalación</p>
+                </header>
+                
+                <div class="equipos-grid">
+                    <article class="equipo-card">
+                        <div class="equipo-imagen">
+                            <i class="fas fa-broadcast-tower" aria-hidden="true"></i>
+                        </div>
+                        <h3>Routers</h3>
+                        <p>Dispositivos de última generación para gestión centralizada y avanzada de toda tu red</p>
+                        <ul class="equipo-marcas">
+                            <li>TP-Link</li>
+                            <li>MikroTik</li>
+                            <li>Ubiquiti</li>
+                            <li>Cisco</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="equipo-card">
+                        <div class="equipo-imagen">
+                            <i class="fas fa-sitemap" aria-hidden="true"></i>
+                        </div>
+                        <h3>Switches</h3>
+                        <p>Conmutadores profesionales para redes cableadas con diferentes capacidades y características</p>
+                        <ul class="equipo-marcas">
+                            <li>Netgear</li>
+                            <li>TP-Link</li>
+                            <li>D-Link</li>
+                            <li>HP</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="equipo-card">
+                        <div class="equipo-imagen">
+                            <i class="fas fa-wifi" aria-hidden="true"></i>
+                        </div>
+                        <h3>Access Points</h3>
+                        <p>Puntos de acceso profesionales para cobertura WiFi extensa, estable y de alta calidad</p>
+                        <ul class="equipo-marcas">
+                            <li>Ubiquiti</li>
+                            <li>TP-Link</li>
+                            <li>MikroTik</li>
+                            <li>Aruba</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="equipo-card">
+                        <div class="equipo-imagen">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Firewalls</h3>
+                        <p>Sistemas de seguridad perimetral avanzados para protección completa de tu infraestructura de red</p>
+                        <ul class="equipo-marcas">
+                            <li>pfSense</li>
+                            <li>Fortinet</li>
+                            <li>Sophos</li>
+                            <li>WatchGuard</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="section faq-redes" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="faq-title" class="gradient-text">Preguntas Frecuentes</h2>
+                    <p>Resolvemos tus dudas sobre instalación y configuración de redes</p>
+                </header>
+                
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Cuánto tiempo toma instalar una red WiFi completa?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>La instalación básica de una red WiFi para una casa promedio toma entre 2-3 horas. Para oficinas pequeñas puede tomar 4-6 horas dependiendo de la complejidad.</p>
+                            <div class="texto-ejemplo">
+                                <strong>Ejemplo:</strong> Una casa de 3 dormitorios con router y un access point adicional se instala y configura en aproximadamente 3 horas.
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Qué diferencia hay entre una red casera y una profesional?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Las redes profesionales incluyen equipos empresariales más robustos, configuración avanzada optimizada, seguridad reforzada, soporte técnico especializado y capacidad para más dispositivos simultáneos.</p>
+                            <div class="texto-ejemplo">
+                                <strong>Ejemplo:</strong> Mientras un router doméstico básico soporta 15-20 dispositivos, uno empresarial puede manejar 50+ conexiones simultáneas con total estabilidad.
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Pueden mejorar mi velocidad de internet actual?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Sí, optimizamos completamente la configuración de tu red para que aproveches el máximo de la velocidad que contrataste con tu proveedor de internet.</p>
+                            <div class="texto-ejemplo">
+                                <strong>Ejemplo:</strong> Si tienes un plan de 200 Mbps pero solo recibes 80-90 Mbps en tus dispositivos, podemos configurar tu red para que obtengas consistentemente los 200 Mbps reales.
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Ofrecen garantía en la instalación?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Sí, todas nuestras instalaciones incluyen garantía en mano de obra y configuración. La duración depende del servicio contratado.</p>
+                            <div class="texto-ejemplo">
+                                <strong>Ejemplo:</strong> Si dentro de los primeros meses tienes problemas de conexión relacionados con nuestra instalación, revisamos y reparamos sin costo adicional.
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Hacen cableado a través de paredes?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Sí, realizamos instalaciones discretas y profesionales con cableado a través de paredes, cielos falsos y conductos existentes cuando es necesario.</p>
+                            <div class="texto-ejemplo">
+                                <strong>Ejemplo:</strong> Instalamos cables CAT6 a través de conductos existentes o creamos pasos discretos para mantener la estética de tu hogar u oficina.
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            ¿Pueden configurar una red optimizada para teletrabajo?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Absolutamente, configuramos redes especialmente optimizadas para videollamadas, transferencia de archivos grandes, acceso remoto seguro y priorización de tráfico crítico.</p>
+                            <div class="texto-ejemplo">
+                                <strong>Ejemplo:</strong> Priorizamos el tráfico de Zoom/Teams/Meet y configuramos VPN seguras para acceso remoto a recursos de oficina.
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="section cta-redes" aria-labelledby="cta-title" style="background: var(--gradient-primary); color: var(--dark-bg);">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">¿Problemas de Conexión o Cobertura?</h2>
+                    <p>Solucionamos tus problemas de red y optimizamos tu conectividad para máximo rendimiento en todos tus dispositivos</p>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/56961938981?text=Hola,%20necesito%20solución%20para%20mis%20problemas%20de%20red%20y%20conectividad" 
+                           class="btn btn-whatsapp"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            WhatsApp Inmediato
+                        </a>
+                        <a href="tel:+56961938981" class="btn btn-primary">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            Diagnosticar Mi Red
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-andescomputacion.png" alt="Logo Andescomputacion" width="150" height="50">
+                    <h3>Andescomputacion</h3>
+                    <p>Tu solución tecnológica integral. Especialistas en componentes, servicio técnico e instalación de sistemas de seguridad en Los Andes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/56961938981" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios de Redes</h4>
+                    <ul>
+                        <li><a href="#servicios">Instalación WiFi</a></li>
+                        <li><a href="#servicios">Cableado Estructurado</a></li>
+                        <li><a href="#servicios">Redes Empresariales</a></li>
+                        <li><a href="#equipos">Equipos y Marcas</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        Yerbas Buenas 381, 2100000 Los Andes, Valparaíso
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        +56 9 6193 8981
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        info@andescomputacion.cl
+                    </p>
+                    <p>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Lun-Vie: 10:00-19:00 | Sáb: 10:00-14:00
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andescomputacion. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animaciones.js" defer></script>
+    
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/56961938981?text=Hola,%20necesito%20solución%20para%20mis%20problemas%20de%20red%20y%20conectividad" 
+       class="whatsapp-float" 
+       aria-label="Contactar por WhatsApp para soluciones de redes y conectividad"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-badge">!</span>
+    </a>
+</body>
+</html>
