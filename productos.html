@@ -372,6 +372,42 @@
             animation: fadeInUp 0.8s ease 0.4s both;
         }
 
+        .proximamente-banner {
+            background: var(--card-bg);
+            padding: var(--space-md) 0;
+            text-align: center;
+            border-radius: var(--border-radius);
+            margin: var(--space-lg) 0;
+        }
+
+        .proximamente-banner h2 {
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+            color: var(--primary-color);
+        }
+
+        .proximamente-banner p {
+            color: var(--text-light);
+            margin-bottom: var(--space-md);
+        }
+
+        .countdown {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+
+        .countdown i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         .categorias-navegacion {
             background: var(--card-bg);
             padding: var(--space-md) 0;
@@ -765,6 +801,10 @@
                 max-width: 300px;
             }
             
+            .proximamente-banner {
+                padding: var(--space-md) 0;
+            }
+            
             .categorias-navegacion ul {
                 justify-content: flex-start;
                 overflow-x: auto;
@@ -860,7 +900,7 @@
                     <h1 id="productos-hero-title">Catálogo de Productos</h1>
                     <p class="hero-subtitle">Descubre nuestra amplia gama de productos tecnológicos con la mejor calidad y precios</p>
                     <div class="hero-actions">
-                        <a href="#teclados" class="btn btn-primary">Explorar Productos</a>
+                        <a href="#" class="btn btn-primary">Explorar Productos</a>
                         <a href="https://wa.me/56961938981" 
                            class="btn btn-whatsapp"
                            target="_blank"
@@ -874,345 +914,24 @@
             </div>
         </section>
 
-        <!-- Navegación por Categorías -->
-        <nav class="categorias-navegacion" aria-label="Navegación por categorías de productos">
+        <!-- Próximamente Banner -->
+        <div class="proximamente-banner">
             <div class="container">
-                <ul>
-                    <li><a href="#teclados" class="active">Teclados</a></li>
-                    <li><a href="#mouse">Mouse</a></li>
-                    <li><a href="#audio">Audio</a></li>
-                    <li><a href="#cargadores">Cargadores</a></li>
-                    <li><a href="#accesorios">Accesorios</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Sección Teclados -->
-        <section id="teclados" class="productos-categoria" aria-labelledby="teclados-title">
-            <div class="container">
-                <div class="categoria-header">
-                    <h2 id="teclados-title" class="gradient-text">Teclados</h2>
-                    <p>Encuentra el teclado perfecto para tus necesidades, desde gaming hasta oficina</p>
-                </div>
-                
-                <div class="productos-grid">
-                    <!-- Producto 1 -->
-                    <article class="producto-card" data-categoria="teclados">
-                        <div class="producto-badge">Nuevo</div>
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2942/2942993.png" alt="Teclado Gaming Mecánico RGB" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Teclado Gaming Mecánico RGB</h3>
-                            <p class="producto-desc">Teclado mecánico con retroiluminación RGB personalizable y switches azules.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Tipo:</span>
-                                    <span>Mecánico</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>USB</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$54.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Teclado%20Gaming%20Mecánico%20RGB" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Producto 2 -->
-                    <article class="producto-card" data-categoria="teclados">
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2942/2942993.png" alt="Kit Teclado y Mouse Inalámbrico" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Kit Teclado y Mouse Inalámbrico</h3>
-                            <p class="producto-desc">Combo teclado y mouse inalámbrico con receptor USB unificado.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Tipo:</span>
-                                    <span>Membrana</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>Inalámbrico 2.4G</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$16.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Kit%20Teclado%20y%20Mouse%20Inalámbrico" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Producto 3 -->
-                    <article class="producto-card" data-categoria="teclados">
-                        <div class="producto-badge">Oferta</div>
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2942/2942993.png" alt="Teclado + Mouse Cobre Antibacteriano" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Teclado + Mouse Cobre Antibacteriano</h3>
-                            <p class="producto-desc">Combo teclado y mouse con superficie de cobre antibacteriana.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Material:</span>
-                                    <span>Cobre antibacteriano</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>USB</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$19.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Teclado%20+%20Mouse%20Cobre%20Antibacteriano" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
+                <h2>¡Próximamente!</h2>
+                <p>Estamos trabajando para traerte los mejores productos tecnológicos</p>
+                <div class="countdown">
+                    <span>Muy pronto</span>
+                    <i class="fas fa-cog fa-spin"></i>
                 </div>
             </div>
-        </section>
-
-        <!-- Sección Mouse -->
-        <section id="mouse" class="productos-categoria" aria-labelledby="mouse-title">
-            <div class="container">
-                <div class="categoria-header">
-                    <h2 id="mouse-title" class="gradient-text">Mouse</h2>
-                    <p>Precisión y comodidad en cada movimiento con nuestra selección de mouse</p>
-                </div>
-                
-                <div class="productos-grid">
-                    <!-- Producto 1 -->
-                    <article class="producto-card" data-categoria="mouse">
-                        <div class="producto-badge">Popular</div>
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Mouse Bluetooth" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Mouse Bluetooth</h3>
-                            <p class="producto-desc">Mouse inalámbrico con conexión Bluetooth para mayor compatibilidad.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>Bluetooth</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>DPI:</span>
-                                    <span>1600</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$9.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Mouse%20Bluetooth" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Producto 2 -->
-                    <article class="producto-card" data-categoria="mouse">
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Mouse Inalámbrico 2.4G" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Mouse Inalámbrico 2.4G</h3>
-                            <p class="producto-desc">Mouse inalámbrico con receptor USB 2.4GHz y diseño ergonómico.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>2.4GHz</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>DPI:</span>
-                                    <span>1200</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$6.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Mouse%20Inalámbrico%202.4G" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Audio -->
-        <section id="audio" class="productos-categoria" aria-labelledby="audio-title">
-            <div class="container">
-                <div class="categoria-header">
-                    <h2 id="audio-title" class="gradient-text">Audio</h2>
-                    <p>Sumérgete en el sonido con nuestros audífonos y dispositivos de audio</p>
-                </div>
-                
-                <div class="productos-grid">
-                    <!-- Producto 1 -->
-                    <article class="producto-card" data-categoria="audio">
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2942/2942947.png" alt="Audífono Bluetooth Manos Libres" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Audífono Bluetooth Manos Libres</h3>
-                            <p class="producto-desc">Audífono inalámbrico con manos libres para llamadas y música.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>Bluetooth</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>Batería:</span>
-                                    <span>8 horas</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$9.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Audífono%20Bluetooth%20Manos%20Libres" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Producto 2 -->
-                    <article class="producto-card" data-categoria="audio">
-                        <div class="producto-badge">Nuevo</div>
-                        <div class="producto-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2942/2942947.png" alt="Audífono Bluetooth Model V8 Negro" loading="lazy">
-                        </div>
-                        <div class="producto-info">
-                            <span class="producto-stock">En stock</span>
-                            <h3>Audífono Bluetooth Model V8 Negro</h3>
-                            <p class="producto-desc">Audífono Bluetooth con diseño moderno y sonido de alta calidad.</p>
-                            <div class="producto-especificaciones">
-                                <div class="especificacion">
-                                    <span>Conectividad:</span>
-                                    <span>Bluetooth 5.0</span>
-                                </div>
-                                <div class="especificacion">
-                                    <span>Batería:</span>
-                                    <span>12 horas</span>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <span class="precio">$18.900</span>
-                                <div class="producto-envio">
-                                    <i class="fas fa-shipping-fast"></i>
-                                    <span>Envío gratis</span>
-                                </div>
-                            </div>
-                            <div class="producto-acciones">
-                                <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Audífono%20Bluetooth%20Model%20V8%20Negro" 
-                                   class="btn btn-whatsapp btn-producto"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp"></i> Consultar
-                                </a>
-                                <button class="btn btn-outline btn-producto favorito-btn">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        </div>
 
         <!-- CTA Final -->
         <section class="section contacto-directo" aria-labelledby="cta-final-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="cta-final-title" class="gradient-text">¿No encuentras lo que buscas?</h2>
-                    <p>Contáctanos directamente y te ayudaremos a encontrar el producto perfecto para ti</p>
+                    <h2 id="cta-final-title" class="gradient-text">¿Buscas algún producto específico?</h2>
+                    <p>Contáctanos directamente y te ayudaremos a encontrar lo que necesitas</p>
                 </header>
                 
                 <div class="text-center">
@@ -1220,7 +939,7 @@
                        class="btn btn-whatsapp btn-large"
                        target="_blank"
                        rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp"></i> Consultar Productos por WhatsApp
+                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
                     </a>
                 </div>
             </div>
