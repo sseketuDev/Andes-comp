@@ -9,23 +9,22 @@
     <meta name="author" content="Andescomputacion">
     
     <!-- Preload crítico -->
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="preload" href="css/components.css" as="style">
-    <link rel="preload" href="css/camaras.css" as="style">
+    <link rel="preload" href="Main.css" as="style">
+    <link rel="preload" href="components.css" as="style">
+    <link rel="preload" href="camara.css" as="style">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     
     <!-- Estilos -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/camaras.css">
-    <link rel="stylesheet" href="css/whatsapp.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="camara.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
           crossorigin="anonymous" referrerpolicy="no-referrer">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="logo andes computacion.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
     
     <!-- Schema.org para Servicio de Instalación -->
     <script type="application/ld+json">
@@ -79,7 +78,7 @@
     <header id="main-header" class="header" role="banner">
         <div class="container header-container">
             <a href="index.html" class="logo" aria-label="Andescomputacion - Página de inicio">
-                <img src="logo andes computacion.png" 
+                <img src="logo.png" 
                      alt="Logo Andescomputacion" 
                      width="150" 
                      height="50"
@@ -121,7 +120,6 @@
                             <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             Solicitar Cotización
                         </a>
-                        <a href="#paquetes" class="btn btn-primary">Ver Paquetes</a>
                     </div>
                 </div>
             </div>
@@ -187,180 +185,6 @@
             </div>
         </section>
 
-        <!-- Tipos de Cámaras -->
-        <section class="section tipos-camaras" id="tipos" aria-labelledby="tipos-title" style="background: var(--section-dark);">
-            <div class="container">
-                <header class="section-header">
-                    <h2 id="tipos-title" class="gradient-text">Tipos de Cámaras que Instalamos</h2>
-                    <p>Soluciones personalizadas según tus necesidades de seguridad</p>
-                </header>
-                
-                <div class="tipos-grid">
-                    <article class="tipo-card">
-                        <div class="tipo-imagen">
-                            <i class="fas fa-video" aria-hidden="true"></i>
-                        </div>
-                        <h3>Cámaras Dome</h3>
-                        <p>Ideales para interiores, diseño discreto y visión 360°</p>
-                        <ul class="tipo-caracteristicas">
-                            <li>Resistente a vandalismo</li>
-                            <li>Instalación en techo</li>
-                            <li>Vision nocturna</li>
-                            <li>Audio bidireccional</li>
-                        </ul>
-                        <div class="tipo-precio">Desde $45.000</div>
-                    </article>
-                    
-                    <article class="tipo-card">
-                        <div class="tipo-imagen">
-                            <i class="fas fa-video-slash" aria-hidden="true"></i>
-                        </div>
-                        <h3>Cámaras Bullet</h3>
-                        <p>Perfectas para exteriores, alcance de larga distancia</p>
-                        <ul class="tipo-caracteristicas">
-                            <li>Resistentes a la intemperie</li>
-                            <li>Alcance hasta 30m</li>
-                            <li>Vision nocturna potente</li>
-                            <li>Fácil orientación</li>
-                        </ul>
-                        <div class="tipo-precio">Desde $55.000</div>
-                    </article>
-                    
-                    <article class="tipo-card">
-                        <div class="tipo-imagen">
-                            <i class="fas fa-camera" aria-hidden="true"></i>
-                        </div>
-                        <h3>Cámaras PTZ</h3>
-                        <p>Control remoto de movimiento, zoom y enfoque</p>
-                        <ul class="tipo-caracteristicas">
-                            <li>Movimiento 360°</li>
-                            <li>Zoom óptico</li>
-                            <li>Seguimiento automático</li>
-                            <li>Alta definición</li>
-                        </ul>
-                        <div class="tipo-precio">Desde $85.000</div>
-                    </article>
-                    
-                    <article class="tipo-card">
-                        <div class="tipo-imagen">
-                            <i class="fas fa-wifi" aria-hidden="true"></i>
-                        </div>
-                        <h3>Cámaras IP WiFi</h3>
-                        <p>Instalación sin cables, fácil configuración</p>
-                        <ul class="tipo-caracteristicas">
-                            <li>Sin cableado de red</li>
-                            <li>Fácil instalación</li>
-                            <li>App móvil incluida</li>
-                            <li>Almacenamiento en SD</li>
-                        </ul>
-                        <div class="tipo-precio">Desde $65.000</div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Paquetes de Instalación -->
-        <section class="section paquetes-camaras" id="paquetes" aria-labelledby="paquetes-title">
-            <div class="container">
-                <header class="section-header">
-                    <h2 id="paquetes-title" class="gradient-text">Paquetes de Instalación Completos</h2>
-                    <p>Soluciones todo incluido para diferentes necesidades de seguridad</p>
-                </header>
-                
-                <div class="paquetes-grid">
-                    <article class="paquete-card">
-                        <div class="paquete-header">
-                            <h3>Paquete Básico</h3>
-                            <div class="paquete-precio">$189.990</div>
-                            <div class="paquete-desc">Ideal para hogares pequeños</div>
-                        </div>
-                        <div class="paquete-contenido">
-                            <ul class="paquete-lista">
-                                <li>2 Cámaras HD 1080p</li>
-                                <li>Grabador DVR 4 canales</li>
-                                <li>Disco duro 1TB</li>
-                                <li>Cableado incluido</li>
-                                <li>App para celular</li>
-                                <li>Instalación profesional</li>
-                            </ul>
-                            <div class="paquete-garantia">Garantía 12 meses</div>
-                            <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Paquete%20Básico%20de%20cámaras%20de%20seguridad" 
-                               class="btn btn-whatsapp"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Solicitar Paquete
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="paquete-card destacado">
-                        <div class="paquete-badge">Más Popular</div>
-                        <div class="paquete-header">
-                            <h3>Paquete Estándar</h3>
-                            <div class="paquete-precio">$289.990</div>
-                            <div class="paquete-desc">Perfecto para hogares y pequeños negocios</div>
-                        </div>
-                        <div class="paquete-contenido">
-                            <ul class="paquete-lista">
-                                <li>4 Cámaras Full HD 2K</li>
-                                <li>Grabador DVR 8 canales</li>
-                                <li>Disco duro 2TB</li>
-                                <li>Visión nocturna 30m</li>
-                                <li>App para celular</li>
-                                <li>Instalación profesional</li>
-                                <li>Soporte remoto incluido</li>
-                            </ul>
-                            <div class="paquete-garantia">Garantía 18 meses</div>
-                            <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Paquete%20Estándar%20de%20cámaras%20de%20seguridad" 
-                               class="btn btn-whatsapp"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Solicitar Paquete
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="paquete-card">
-                        <div class="paquete-header">
-                            <h3>Paquete Premium</h3>
-                            <div class="paquete-precio">$459.990</div>
-                            <div class="paquete-desc">Para negocios y propiedades grandes</div>
-                        </div>
-                        <div class="paquete-contenido">
-                            <ul class="paquete-lista">
-                                <li>8 Cámaras 4K Ultra HD</li>
-                                <li>Grabador DVR 16 canales</li>
-                                <li>Disco duro 4TB</li>
-                                <li>Visión nocturna 50m</li>
-                                <li>Detección de movimiento</li>
-                                <li>App para celular</li>
-                                <li>Instalación profesional</li>
-                                <li>Soporte prioritario 24/7</li>
-                            </ul>
-                            <div class="paquete-garantia">Garantía 24 meses</div>
-                            <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20Paquete%20Premium%20de%20cámaras%20de%20seguridad" 
-                               class="btn btn-whatsapp"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                Solicitar Paquete
-                            </a>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="personalizado-cta">
-                    <h3>¿Necesitas un sistema personalizado?</h3>
-                    <p>Cotizamos sistemas adaptados a tus necesidades específicas</p>
-                    <a href="https://wa.me/56961938981?text=Hola,%20necesito%20una%20cotización%20personalizada%20para%20cámaras%20de%20seguridad" 
-                       class="btn btn-primary"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Solicitar Cotización Personalizada
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <!-- Proceso de Instalación -->
         <section class="section proceso-camaras" id="proceso" aria-labelledby="proceso-title" style="background: var(--section-dark);">
             <div class="container">
@@ -409,102 +233,6 @@
                             <p>Quedamos a tu disposición para cualquier consulta o soporte técnico que necesites</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Preguntas Frecuentes -->
-        <section class="section faq-camaras" id="faq" aria-labelledby="faq-title">
-            <div class="container">
-                <header class="section-header">
-                    <h2 id="faq-title" class="gradient-text">Preguntas Frecuentes</h2>
-                    <p>Resolvemos tus dudas sobre instalación de cámaras de seguridad</p>
-                </header>
-                
-                <div class="faq-grid">
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Cuánto tiempo toma la instalación completa?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>La instalación de un sistema básico (2-4 cámaras) toma aproximadamente 4-6 horas. Sistemas más complejos pueden requerir 1-2 días completos.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> Para una casa con 4 cámaras, normalmente programamos la instalación en una mañana.
-                            </div>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Funcionan las cámaras durante cortes de luz?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Sí, nuestros sistemas incluyen respaldo de energía (UPS) que mantiene las cámaras funcionando durante cortes eléctricos.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> El sistema puede funcionar entre 4-8 horas con batería, dependiendo del número de cámaras.
-                            </div>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Puedo ver las cámaras desde mi celular?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Absolutamente. Todos nuestros sistemas incluyen app móvil gratuita para iOS y Android con acceso remoto desde cualquier lugar.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> Puedes ver tu casa en tiempo real desde tu trabajo o mientras viajas usando la app "Smart Security".
-                            </div>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Qué garantía ofrecen en la instalación?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Ofrecemos garantía de 12 a 24 meses en la instalación y equipos, dependiendo del paquete seleccionado.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> Si una cámara falla dentro del primer año, la reemplazamos sin costo adicional.
-                            </div>
-                        </div>
-                    </details>
-                    
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Hacen mantenimiento de los sistemas instalados?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Sí, ofrecemos planes de mantenimiento preventivo para asegurar el óptimo funcionamiento de tu sistema de seguridad.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> Plan básico incluye limpieza de cámaras y verificación del sistema cada 6 meses por $25.000.
-                            </div>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Qué incluye exactamente la instalación?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>La instalación incluye colocación de cámaras, cableado estructurado, configuración del DVR/NVR, instalación de la app móvil y capacitación del usuario.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> Para un paquete de 4 cámaras, instalamos todo el cableado, configuramos la grabación las 24 horas y te enseñamos a usar la app.
-                            </div>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary class="faq-question">
-                            ¿Puedo expandir el sistema después?
-                        </summary>
-                        <div class="faq-answer">
-                            <p>Sí, todos nuestros sistemas son escalables. Puedes agregar más cámaras posteriormente según tus necesidades.</p>
-                            <div class="texto-ejemplo">
-                                <strong>Ejemplo:</strong> Si compras un DVR de 8 canales, puedes empezar con 4 cámaras y agregar 4 más después sin cambiar el equipo principal.
-                            </div>
-                        </div>
-                    </details>
                 </div>
             </div>
         </section>
@@ -571,10 +299,8 @@
                 <div class="footer-links">
                     <h4>Servicios de Seguridad</h4>
                     <ul>
-                        <li><a href="#paquetes">Paquetes de Cámaras</a></li>
                         <li><a href="#tipos">Tipos de Cámaras</a></li>
                         <li><a href="#proceso">Proceso de Instalación</a></li>
-                        <li><a href="#faq">Preguntas Frecuentes</a></li>
                         <li><a href="servicios.html">Todos los Servicios</a></li>
                     </ul>
                 </div>

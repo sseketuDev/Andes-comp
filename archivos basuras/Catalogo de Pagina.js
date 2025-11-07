@@ -1,0 +1,283 @@
+const productos = [
+    {
+        {
+        id: 1,
+        nombre: "MOUSE INALAMBRICO EGOS WL",
+        precio: $14900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+{ nombre: "DPI", valor: "800" },
+{ nombre: "Conectividad", valor: "USB" },
+{ nombre: "Iluminación", valor: "RGB" },
+{ nombre: "Botones", valor: "  programables" }
+],
+    },
+    {
+        id: 2,
+        nombre: "MOUSE INALAMBRICO PARA MAC",
+        precio: $12990,
+        categoria: "mouse",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_847125-MLC92768021532_092025-O-mouse-inalambrico-para-macbook-bluetooth-recargable.webp",
+        Especififcaciones: [
+{ nombre: "DPI", valor: "1600" },
+{ nombre: "Conectividad", valor: "USB" },
+{ nombre: "Iluminación", valor: "NO TIENE" },
+{ nombre: "Botones", valor: "4" }
+],
+,
+           
+    },
+    {
+        id: 3,
+        nombre: "MOUSE INALAMRICO 2 4G WIRELESS",
+        precio: $6900,
+        categoria: "mouse", 
+        imagen: "https://www.technologyworld.cl/producto/microsoft-mouse-microsoft-bluetooth-negro-rjn-00001",
+        Especififcaciones: [
+{ nombre: "DPI", valor: "1600" },
+{ nombre: "Conectividad", valor: "USB" },
+{ nombre: "Iluminación", valor: "RGB" },
+{ nombre: "Botones", valor: " programables" }
+],
+        
+    },
+    {
+        id: 4,
+        nombre: "MOUSE OPTICAL USB 628",
+        precio: $2900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "" },
+    { nombre: "Conectividad", valor: "" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: " programables" }
+],
+    }
+
+    {
+        id: 5,
+        nombre: "MOUSE GAMING ZORNWEE GX10",
+        precio: $12900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "" },
+    { nombre: "Conectividad", valor: "" },
+    { nombre: "Iluminación", valor: "" },
+    { nombre: "Botones", valor: " programables" }
+],
+    }
+
+    {
+        id: 6,
+        nombre: "MOUSE GAMING ZORNWEE GX10",
+        precio: $8900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 7,
+        nombre: "MOUSE GAMER  USB DPI 2400",
+        precio: $12900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "2400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 8,
+        nombre: "Mouse bluetooth Philips M634",
+        precio: $18900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 9,
+        nombre: "MOUSE INALAMBRICO GENIUS NX-7000",
+        precio: $6295,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 10,
+        nombre: "Mouse inalambrico 2.4Ghz",
+        precio: $6900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id:11,
+        nombre: "MOUSE GAMER RGB IMPACT M908",
+        precio: $34900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 12,
+        nombre: "MOUSE GAMER RGB COBRA M711",
+        precio: $26900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 13,
+        nombre: "MOUSE GAMER RGB GRIFFIN M607",
+        precio: $22900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 14,
+        nombre: "MOUSE HP USB 1200DPI",
+        precio: $5900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "1200" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 15,
+        nombre: "MOUSE LENOVO USB 3200DPI",
+        precio: $9900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: 32400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 16,
+        nombre: "MOUSE INALAMRICO 2.4G M5",
+        precio: $6900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 17,
+        nombre: "MOUSE KENSINGTON INALAMBRICO USB",
+        precio: $12900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 18,
+        nombre: "MOUSE GAMER ERGONOMICO RGB",
+        precio: $12900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 19,
+        nombre: "MOUSE GAMER Q802 USB",
+        precio: $8900,
+        categoria: "mouse",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+
+    {
+        id: 20,
+        nombre: " ",
+        precio: ,
+        categoria: " ",
+        imagen: " ",
+        Especififcaciones: [
+    { nombre: "DPI", valor: "6400" },
+    { nombre: "Conectividad", valor: "USB" },
+    { nombre: "Iluminación", valor: "RGB" },
+    { nombre: "Botones", valor: "6 programables" }
+],
+    }
+    }
+]
