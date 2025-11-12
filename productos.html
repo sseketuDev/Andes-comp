@@ -12,12 +12,15 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="logo andes computacion.png">
+        <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
     <!-- Header -->
     <header id="main-header" class="header" role="banner">
         <div class="container header-container">
             <a href="index.html" class="logo" aria-label="Andescomputacion - Página de inicio">
+                <img src="logo andes computacion.png" alt="Logo Andescomputacion" class="logo-img">
                 <h1 class="gradient-text">Andescomputacion</h1>
             </a>
             
@@ -30,10 +33,10 @@
             <nav id="main-nav" class="nav-main" aria-label="Navegación principal">
                 <ul role="menubar">
                     <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
-                    <li role="none"><a href="servicios.html" role="menuitem">Servicios</a></li>
+                    <li role="none"><a href="index.html#servicios" role="menuitem">Servicios</a></li>
                     <li role="none"><a href="productos.html" role="menuitem" aria-current="page">Productos</a></li>
-                    <li role="none"><a href="nosotros.html" role="menuitem">Nosotros</a></li>
-                    <li role="none"><a href="contacto.html" role="menuitem">Contacto</a></li>
+                    <li role="none"><a href="index.html#nosotros" role="menuitem">Nosotros</a></li>
+                    <li role="none"><a href="index.html#contacto" role="menuitem">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -803,10 +806,6 @@
                         </div>
                         <div class="producto-precio">
                             <span class="precio">${formatearPrecio(producto.precio)}</span>
-                            <div class="producto-envio">
-                                <i class="fas fa-shipping-fast"></i>
-                                <span>Envío gratis</span>
-                            </div>
                         </div>
                         <div class="producto-acciones">
                             <a href="https://wa.me/56961938981?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(producto.nombre)}" 
