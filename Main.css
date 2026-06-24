@@ -275,3 +275,55 @@ a {
     opacity: 0.7;
     pointer-events: none;
 }
+/* ===== UBICACIÓN ===== */
+.ubicacion-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.ubicacion-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.ubicacion-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+}
+
+.ubicacion-item i {
+    font-size: 1.4rem;
+    color: var(--accent-primary);
+    margin-top: 2px;
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+}
+
+.ubicacion-item h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.ubicacion-item p {
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .ubicacion-layout {
+        grid-template-columns: 1fr;
+    }
+}
